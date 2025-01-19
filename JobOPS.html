@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job & Education Finder</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background-color: #0078d4;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+    }
+    main {
+      padding: 2em;
+    }
+    .input-section, .results-section {
+      margin-bottom: 2em;
+    }
+    input, button, select {
+      padding: 0.8em;
+      margin: 0.5em 0;
+      width: 100%;
+      max-width: 400px;
+    }
+    button {
+      background-color: #0078d4;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005bb5;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Job & Education Finder</h1>
+    <p>Simple. Accessible. Time-Saving.</p>
+  </header>
+  <main>
+    <div class="input-section">
+      <h2>Find Opportunities</h2>
+      <label for="location">Enter Location:</label>
+      <input type="text" id="location" placeholder="Type your location">
+      <button onclick="alert('GPS Feature Coming Soon')">Use Current Location</button>
+      <label for="radius">Search Radius (km):</label>
+      <select id="radius">
+        <option value="5">5 km</option>
+        <option value="10">10 km</option>
+        <option value="20">20 km</option>
+      </select>
+      <button onclick="searchJobs()">Search</button>
+    </div>
+    <div class="results-section">
+      <h2>Results</h2>
+      <p>No results yet. Perform a search above!</p>
+    </div>
+    <div>
+      <button onclick="alert('Feature Coming Soon')">Find Jobs for Anyone</button>
+    </div>
+  </main>
+  <footer>
+    <p>Accessibility | Privacy Policy | Contact Us</p>
+  </footer>
+  <script>
+    function searchJobs() {
+      alert('Search functionality will be implemented later!');
+    }
+  </script>
+</body>
+</html>
